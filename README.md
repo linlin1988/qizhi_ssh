@@ -88,6 +88,66 @@ server
 ```
 
 
+## 服务端mysql初始化
+
+创建表
+
+```
+CREATE TABLE `proxy_server` (
+  `ip` varchar(30) NOT NULL,
+  `server_id` int(6) DEFAULT NULL,
+  `service_id` int(6) DEFAULT NULL,
+  `baolei_info` varchar(2000) DEFAULT NULL,
+  `private_ip` varchar(60) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ;
+
+
+CREATE TABLE `server_list` (
+  `ip` varchar(30) NOT NULL,
+  `private_ip` varchar(60) DEFAULT NULL, 
+  `comment` varchar(500) DEFAULT NULL,
+  `mtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+```
+
+一些初始化数据
+
+```
+
+#服务器表
+mysql> select *  from server_list  \G;
+*************************** 1. row ***************************
+        ip: xx.xx.xx.xx
+private_ip: 192.168.2.2
+   comment: NULL
+     mtime: 2018-06-22 14:20:02
+*************************** 2. row ***************************
+        ip: xx.xx.xx.xx
+private_ip: 192.168.2.2
+   comment: NULL
+     mtime: 2018-06-22 14:20:02
+2 rows in set (0.00 sec)
+
+#代理服务器表
+
+mysql> select *  from proxy_server  \G;
+*************************** 1. row ***************************
+         ip: -
+  server_id: 773
+ service_id: 1524
+baolei_info: {"server_id":"773","server_name":"192.168.xx.69","ipaddr":"192.168.xx.69","account":"6","remote":"any","systype":"General Linux","systype_id":"2","brief":"","services":[{"id":"1524","name":"ssh","type":"tui","proto":"ssh","icon":"\/icons\/default\/securecrt.gif","options":[]}],"cls":1,"no":1}
+ private_ip: 192.168.xx.69
+1 row in set (0.00 sec)
+
+```
+
+上面的baolei_info是来自齐治科技的原始数据, 录入了机器就有</br>
+绕过原理是登录其他所有机器,都走这台机器出去
+相当于齐治那边只录入了一台机器.
+
+
 ## windows 客户端 部署
 
 1. 安装xshell 4 或者 5</br>
