@@ -1,0 +1,26 @@
+.pages{display:inline-block;margin-top:2px;}
+.pages li{
+	display:inline-block;
+	border:1px solid #afafaf;
+	padding:1px 6px;
+	cursor:pointer;
+	margin-left:2px;
+}
+.pages .pgNext{
+	cursor:cursor;
+	color:#000;
+}
+.pages .pgEmpty{
+	cursor:default;
+	color:#afafaf;
+}
+.pages .pgCurrent{
+	cursor:default;
+}
+.pages .pgCustom{
+	border:none;
+	padding:0px;
+}
+.pgCustom input{
+	width:30px;
+}

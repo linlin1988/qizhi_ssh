@@ -1,0 +1,476 @@
+@charset "utf-8";
+
+/*主要内容显示界面的样式 开始*/
+
+/*密码错误，有效期超时等警告样式*/
+
+#alerts div {
+        margin: 5px; margin-left: 10px; margin-right: 10px;
+        padding: 3px; padding-left: 12px;
+        border: solid 1px #c0c0c0;
+        background-color: #fff; color: #000;
+        text-align: left; font-size:10pt;
+}
+
+#alerts div a { color: #ff0000; text-decoration: none; }
+
+/*表格样式*/
+/*----用到tab3的页面
+./profile_edit_sshkey.php
+./manager/server_edit-batch.php
+./tools.php
+-----------*/
+table .enable_disable_sshkey_form {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+table .enable_disable_sshkey_form input[type='submit'] {
+	cursor: pointer;
+	border: none;
+	background: transparent;
+	text-decoration: underline;
+}
+
+table .enable_disable_sshkey_form input[type='submit']:hover {
+	color: red;
+	text-decoration: none;
+}
+
+table .delete_sshkey_form {
+	display: inline-block;
+}
+
+table .delete_sshkey_form input[type='submit'] {
+	cursor: pointer;
+	border: none;
+	background: transparent;
+	text-decoration: underline;
+}
+
+table .delete_sshkey_form input[type='submit']:hover {
+	color: red;
+	text-decoration: none;
+}
+
+.tab1 tr{
+	background:#FFF;
+}
+
+.tab2 tr{
+	background:#F2F2F2;
+}
+
+th input[type=checkbox],td input[type=checkbox]{
+	margin-right:2px;
+}
+
+.tab3 {
+        width: 60%;
+        border: 0;
+        margin: 0;
+}
+.tab3 td {
+	padding: 0;
+        line-height: 25px;
+        padding-left: 10px;
+        margin: 0;
+        border: #CFCFCF 0px solid;
+        border-top: 0px;
+        margin-left: -1px;
+        margin-top: -1px;
+}
+.tab3 th {
+	padding: 0;
+        padding-left: 10px;
+        margin-left: -1px;
+        margin-top: -1px;
+        margin-right: 2px;
+        line-height: 25px;
+        text-align: left;
+        border-right: none;
+        border-bottom: none;
+        border-top: none!important;
+        border-top: #CFCFCF 0px solid;
+        border-left: #CFCFCF 0px solid;
+        background: url(../images/fhbg.gif) repeat-x top;
+        font-weight: bold;
+        white-space: nowrap;
+}
+
+.tab2 {
+        border: 0;
+        border-collapse:separate;
+        border-spacing:2px !important;
+}
+
+.tab2 th,.tab2 td{
+	line-height:19px;
+}
+
+.dt2{width:98%;}
+.tab2 td{text-align:left;padding-top:3px;}
+.tab2 th{/*font-weight:bold;*/text-align:right;padding-right:10px;}
+
+.tab1 {
+        width: 98%;
+        border: 0;
+	margin-bottom:1em;
+}
+#shterm-dialog .tab1{margin-bottom:0;}
+.tab1 td {
+        padding: 0;
+        line-height: 25px;
+        padding-left: 10px;
+        margin: 0;
+        border: #CFCFCF 1px solid;
+        border-top: 0px;
+        margin-left: -1px;
+        margin-top: -1px;
+}
+
+.tab1 td.bdred{
+	border: 1px solid #ff0000;
+	border-top:1px solid #ff0000;
+	margin-left:1px;
+	margin-top:0px;
+}
+
+.tab1 th {
+        padding: 0;
+        padding-left: 10px;
+        margin-left: -1px;
+        margin-top: -1px;
+        margin-right: 2px;
+        line-height: 25px;
+        text-align: left;
+        border-right: #CFCFCF 1px solid;
+        border-bottom: #CFCFCF 1px solid;
+        border-top: #CFCFCF 1px solid;
+        border-left: #CFCFCF 1px solid;
+	background: url(../images/fhbg.gif) repeat-x top;
+        white-space: nowrap;
+}
+
+/*奇偶行样式*/
+.w1,.tab1 .w1 {
+        background: #E7E7E7;
+}
+
+#toolbar a,th a,td a {
+	color:#000;
+        text-decoration: underline;
+}
+#toolbar a:hover,th a:hover,td a:hover {
+        text-decoration: none;
+        color: #FF0015;
+}
+
+/*对于左右2列型的表格的设定的左边的标题右对齐样式*/
+.comm2 {
+        text-align: right;
+}
+
+.tab1 td.pr10{padding-right:10px;}
+
+.tab1 .th_right th{text-align:right;padding-right:10px;}
+
+.justify-both{
+	white-space:nowrap;
+	text-align:left;
+}
+
+/*一般的注释，说明的颜色*/
+.comment {
+        color: #666666;
+}
+
+.comment2{
+	color:#000;
+}
+
+/*checkbox,radio等表单元素后的文字的鼠标样式*/
+.d-arrow{
+	cursor:default;
+}
+
+/*checkbox,radio等表单元素不可选时后面文字的颜色*/
+.uneffect{
+	color:#808080;
+}
+
+/*系统提示*/
+.sysinfo{
+	padding: 3px; 
+	background-color: #fff
+}
+
+.important{
+	color:#B94A48;
+}
+
+/*系统重要提示或警告*/
+.warning{
+	color:red;
+}
+
+.tab1 td.warning,.tab2 td.warning,.tab3 td.warning{
+	color:red;
+}
+
+.cmd {
+        background: #888888;
+}
+
+.cmd td {
+        color: #222;
+        font-size: 12px;
+        font-weight: bold;
+}
+
+.cmd a{
+        color: #222;
+}
+.cmd a:hover {
+        color: #bbb;
+}
+
+.total td{
+        color: #222;
+        background: #888888;
+        font-weight: bold;
+}
+
+/*涉及到关联选择控件的CSS样式*/
+
+.aslink{ /*触发控件的SPAN用的样式*/
+        color:#000;
+        cursor:pointer;
+        text-decoration:underline;
+}
+
+.ashover{/*触发控件的span鼠标悬浮的样式*/
+	color:red;
+	text-decoration:none;
+}
+
+
+.hide{
+	display:none;
+}
+
+/*设备访问页面侧边栏样式*/
+.mgroup_list li{line-height:25px;padding-top:1px;padding-left:10px;margin-right:5px;overflow:hidden;}
+.mgroup_list a{color:#333333;text-decoration:underline;display:block;cursor:pointer;}
+.mgroup_list .odd{background-color:#e0e0e0;}
+.mgroup_list .selected a{text-decoration:none;font-weight:bold;}
+.mgroup_input{width:80px;margin-right:2px;margin-bottom:5px;}
+.mgroup_list a:hover{text-decoration:underline;}
+
+
+/*各页面独立包含的css 格式页面名_css名*/
+.passwd_change_tips{/*p元素*/
+	color:#000;
+}
+
+.backup_server_a{/*a元素*/
+	color:#000;
+}
+
+.server_grid_operate{/*span元素*/
+	color:#000;
+}
+
+.server_grid_ready{/*java控制台加载完后的span样式*/
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+.server_grid_hover{/*鼠标悬浮时的span样式*/
+	color:red;
+}
+
+.server_edit_a{
+	color:#000;
+}
+
+.server_a{
+	color:#000;
+}
+
+.dept_hr{
+	color:#ccc;
+}
+
+.dept_edit_mgroup_hr{
+	color:#ccc;
+}
+
+.dept_edit_server_hr{
+	color:#ccc;
+}
+
+.dept_edit_identity_hr{
+	color:#ccc;
+}
+
+.sess_exp_deny{
+	background-color: #C71585; 
+	color: #FFF;
+}
+
+.sess_exp_kill{
+	background-color: #9370DB; 
+	color: #FFF;
+}
+
+.sess_exp_timeout{
+	background-color: #8A2BE2; 
+	color: #FFF;
+}
+
+.sess_exp_outdisp{
+	color: #333; 
+	font-family: monospace; 
+	font-size: 13px;
+}
+
+.sess_exp_lineno{
+	display: block;
+	color: #FFF;  
+	background-color: #666; 
+	cursor: default;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+
+.sess_exp_lineno_hover{
+	display:block;
+	color:#222;
+	background-color:#888;
+	cursor:default;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+
+.sess_exp_a{
+	text-decoration:none;
+}
+
+.sess_exp_a2{
+	text-decoration:none;
+	background-color:#ffff00;
+}
+
+.sess_rtm_textarea{
+	color:#606060;
+	font-family:monospace;
+	font-size:13px;
+	width:98%;
+	height:26em;
+	word-spacing:break-word;
+	word-break:break-all;
+}
+
+.server_passwd_detail_fail{
+	color:#ff0000;
+}
+
+.server_passwd_detail_success{
+	color:#000;
+}
+
+.sess_seg_a{
+	text-decoration: none;
+	font-weight:bold;
+}
+
+.sess_out_output{
+	color: #000; 
+	font-family: monospace; 
+	font-size: 13px;
+}
+
+.sess_out_lineno{
+	background-color:#666;
+}
+
+.manager_report_a{
+	color:#000;
+}
+
+.overview_authlog_identity_a{
+	color:#a0a0a0;
+}
+
+.overview_authlog_identity_a2{
+	color:#000;
+}
+
+.worksheet_detail_table{
+}
+
+.worksheet_detail_table caption{
+        font-size:1.2em;
+        height:1.5em;
+        font-weight:bold;
+        text-align:center;
+}
+
+.worksheet_detail_table th{
+        font-size:12px;
+        text-align:right;
+}
+
+.worksheet_detail_table th,.worksheet_detail_table td{
+        vertical-align:top;
+}
+
+.worksheet_detail_table td{
+        text-align:left;
+        padding-left:10px;
+}
+
+#worksheet_detail_pizhu{
+        margin-left:8px;
+        margin-top:5px;
+        margin-bottom:5px;
+}
+
+#worksheet_detail_pizhu th,#worksheet_detail_pizhu td{
+        padding:2px 2px;
+        text-align:left;
+}
+
+.worksheet_detail_result{
+        text-decoration:underline;cursor:pointer;
+}
+
+.status_ul_img li{
+	float:left;
+	height:190px;
+	margin-right:10px;
+}
+
+.session_active{
+	color:blue;
+}
+/*-----主要内容显示界面的样式结束------*/
+
+/*-----   tn5250播放器界面样式 -------*/
+.player-detail{width:670px;height:400px;margin:5px auto;}
+.player-control{width:670px;height:62px;margin:5px auto;position:relative;background:#e9e9e9;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+.player-control img{cursor:pointer;width:24px;height:24px;}
+.player-prev,.player-start,.player-next,.player-index,.player-time,.player-brief,player-progress,.player-speed{position:absolute;}
+.player-prev{top:5px;left:10px;width:24px;}
+.player-start{top:5px;left:42px;width:24px;}
+.player-next{top:5px;left:74px;width:24px;}
+.player-index{top:10px;left:130px;}
+.player-time{top:10px;left:190px;}
+.player-brief{top:9px;left:350px;}
+.player-onlybrief{left:190px;}
+.player-brief-value{width:200px;word-wrap:break-word;overflow:hidden;}
+.player-onlybrief-value{width:300px;}
+.player-speed{top:35px;left:10px;width:120px;}
+.player-progress{top:40px;left:130px;width:520px;}
+/*-----   tn5250播放器界面样式结束 ---*/

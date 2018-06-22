@@ -1,0 +1,80 @@
+﻿/*---
+Author: Lijun
+Email:  lijun@stherm.com
+Gtalk:  lee20060407@gamil.com
+Mobile: 13917716332
+Date:	2010-09-8 15:06
+Version:0.1
+-----*/
+
+/* theme  purple*/
+#top-back{
+        background:url(../purple/images/top-background-repeat.png) repeat-x;
+}
+#top{
+        background:url(../purple/images/top-background.png) left center no-repeat transparent;
+}
+#logo{
+        background:url(../purple/images/logo.png) 30% center no-repeat;
+}
+#menu ul.main li{
+        background:url(../purple/images/menu-normal.png) repeat-x;
+}
+#menu ul.main li.active,#menu ul.main li.hover{
+        background:url(../purple/images/tab-header.png) repeat-x;
+}
+#menu ul.main li.active span,#menu ul.main li.hover span{
+	color:#333;
+}
+#menu ul li ul li,.subright{
+	background:#833ab0;
+}
+#menu-right ul li ul li.hover{
+	background: #9054bb;
+}
+#menu div {
+	background:url(../purple/images/tab-body.png) repeat-x;
+}
+
+#sidebar_title{background:url(../purple/images/sidebar.png) no-repeat;height:26px;}
+
+#submenu-space{background:url(../purple/images/tab-body.png) repeat-x;}
+
+/*要恢复原来的按钮样式，请注释掉这个样式，并把原来的样式的注释去掉*/
+.btn{ background:url(../purple/images/btn-left-right.gif) left top no-repeat; padding-left:4px;display:inline-block;margin-right:2px;}
+.btn span{ display:block; background: url(../purple/images/btn-left-right.gif) right top no-repeat; padding-right:4px;}
+.btn input{ background:url(../purple/images/btn-center.png) repeat-x; border:none; height:26px;cursor:pointer;color:purple;}
+
+.mgroup_list .selected{background-color:#ead0fb;}
+.mgroup_list .selected a{color:#800080;}
+.selectassociatehover{
+        color:black;
+        background-color:#ead0fb;
+}
+.pages .pgCurrent{background-color:#c8bbf7;color:#000;}
+.pages .pagehover{background-color:#c8bbf7;cursor:pointer;text-decoration:underline;}
+
+.ib{border:1px solid #D4AAFF;}
+
+.operate-a{
+	display:block;
+	background:#D4AAFF;
+	padding:2px 10px;
+	border:1px solid #5B128A;
+}
+
+#wizzard-content{background:#9054bb;}
+#wizzard-title{background:#9054bb;}
+ul.wizzard li a,ul.wizzard li a:visited{color:#fff;}
+ul.wizzard li a:hover{color:yellow;}
+
+#wizzard-ul li.selected a,#wizzard-ul li.selected a span{color:purple;}
+.navbar .nav .dropdown-menu li a:hover,
+.navbar .nav .dropdown-menu .active a,
+.navbar .nav .dropdown-menu .active a:hover {
+  _background-color: #7a43b6;
+}
+.navbar .nav .active a,
+.navbar .nav .active a:hover {
+  _background-color: #400099;
+}
